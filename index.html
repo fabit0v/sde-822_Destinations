@@ -22,78 +22,69 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form class="row g-3 needs-validation" novalidate>
-      <div id="green_border">
-        <h1>Vacation Destinations WishList</h1>
-        <p>
-          Found exciting places to visitation on your next vacation? Use the
-          form below to add them to your wishlist
-        </p>
-      </div>
-      <div id="red_border">
-        <div class="mb-3">
-          <label
-            for="formGroupExampleInput"
-            class="form-label"
-            aria-required="true"
-            >Destination name</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput"
-            placeholder="Enter the name of the destination"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Location</label>
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput"
-            aria-required="true"
-            placeholder="Where is it located?"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Photo</label>
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput"
-            placeholder="Enter an image Url of the place"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label"
-            >Description</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput2"
-            placeholder="Where is it located?"
-          />
-          <br />
-          <button
-            type="button"
-            id="addToList_btn"
-            class="btn btn-primary"
-            style="
-              --bs-btn-padding-y: 0.4rem;
-              --bs-btn-padding-x: 6.9rem;
-              --bs-btn-font-size: 0.75rem;
-            "
-          >
-            Add to List
-          </button>
-        </div>
-      </div>
-    </form>
+    <header id="green_border">
+      <h1>Vacation Destinations WishList</h1>
+      <p>
+        Found exciting places to visitation on your next vacation? Use the form
+        below to add them to your wishlist
+      </p>
+    </header>
 
-    <div id="blue_border">
-      <div id="magenta_border"><strong>Enter Destination Details</strong></div>
-      <div id="yellow_border"></div>
+    <div class="container">
+      <section id="red_border">
+        <form>
+          <div class="destinations">
+            <div class="mb-3">
+              <label for="Destination name" class="form-label"
+                >Destination name</label
+              >
+              <input
+                required
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Enter the name of the destination"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Location" class="form-label">Location</label>
+              <input
+                required
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Where is it located?"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Photo" class="form-label">Photo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Enter an image Url of the place"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Description" class="form-label">Description</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Enter a Description"
+              ></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Add to List</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="blue_border">
+        <section id="magenta_border">
+          <h3>Enter Destination Details</h3>
+        </section>
+        <section id="yellow_border"></section>
+      </section>
     </div>
 
     <!-- Bootstrap JavaScript -->
